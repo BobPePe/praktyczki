@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Test Input</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscript.js" language="JavaScript"></script>
+</head>
+<body>
+    <label> Zadansko 1 </label> <br>
+    <form name="calculatorForm" action="" method="GET">
+        
+        Enter first number <br>
+        <input type="number" id="inputbox" name="inputbox"><br>
+        
+        Enter second number <br>
+        <input type="number" id="inputbox1" name="inputbox1">
+        
+        <br><br>
+        Add<input type="radio" id="add" name="choose" value="+">
+        Sub<input type="radio" id="sub" name="choose" value="-">
+        Mul<input type="radio" id="mul" name="choose" value="*">
+        Div<input type="radio" id="div" name="choose" value="/">
+        
+        <input type="button" name="button" value="Click" onClick="handleCalculatorForm(this.form)">
+        <br>
+    </form>
+    <div id="calcResult"></div>
+
+
+    <label> Zadansko 2 </label> <br>
+    <form name="palindromeForm" action="" method="GET">
+        
+        Enter your word to check if its palindrome: <br>
+        <input type="text" name="inputbox2" value="">
+        <input type="button" name="button2" value="Click" onClick="handlePalindromeForm(this.form)">
+    </form>
+    <div id="palindromeResult"></div>
+
+    <label> Zadansko 3 </label> <br>
+    <input type="button" value="masło" onclick="zad3()">
+    <br>
+    <label> Zadansko 4 </label> <br>
+    <input type="button" value="masło" onclick="zad4()">
+
+</body>
+</html>
